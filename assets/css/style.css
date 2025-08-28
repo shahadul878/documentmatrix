@@ -1,0 +1,389 @@
+/* Color scheme derived from screenshot to preserve look */
+:root {
+    --dm-deep: #33235f;
+    --dm-accent: #5b4a8f;
+}
+
+body {
+    background-color: #f4f6fb;
+}
+
+.bg-deep {
+    background-color: var(--dm-deep) !important;
+}
+
+.logo {
+    max-height: 56px;
+}
+
+.min-vh-25 {
+    min-height: 25vh;
+}
+
+.floating-toolbar {
+    position: fixed;
+    right: 16px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1040;
+}
+
+.floating-toolbar .btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+
+/* Keep header buttons style close to screenshot */
+#btn-generate {
+    border-radius: .5rem;
+}
+
+#btn-login {
+    border-radius: .5rem;
+}
+
+/* Card subtle border similar to table container look */
+.card {
+    border-radius: .5rem;
+}
+
+.card-header {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+/* Responsive tweaks to maintain layout look while stacking on small screens */
+@media (max-width: 991.98px) {
+  header .container {
+    row-gap: .75rem;
+  }
+  
+  /* Mobile header adjustments */
+  .logo {
+    max-height: 40px;
+  }
+  
+  /* Stack header buttons on mobile */
+  header .d-flex.gap-2 {
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
+  }
+  
+  /* Adjust table for mobile */
+  .table-section .table {
+    font-size: 0.875rem;
+  }
+  
+  .table-section .table th,
+  .table-section .table td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  /* Make table scrollable on mobile */
+  .table-responsive {
+    border: 0;
+  }
+  
+  /* Adjust upload section spacing */
+  .upload-section {
+    margin-top: 1rem !important;
+  }
+  
+  /* Improve modal responsiveness */
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  
+  /* Stack pricing buttons on mobile */
+  .modal-body .row .col-4 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+  /* Header adjustments for very small screens */
+  header .container {
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Reduce button sizes on mobile */
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  /* Adjust table text size */
+  .table-section .table {
+    font-size: 0.8rem;
+  }
+  
+  /* Make table cells more compact */
+  .table-section .table th,
+  .table-section .table td {
+    padding: 0.375rem 0.25rem;
+  }
+  
+  /* Adjust modal for very small screens */
+  .modal-dialog {
+    margin: 0.25rem;
+  }
+  
+  .modal-body {
+    padding: 0.75rem;
+  }
+  
+  /* Stack all pricing buttons vertically on very small screens */
+  .modal-body .row .col-4 {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Improve offcanvas menu */
+  .offcanvas-body {
+    padding: 1rem;
+  }
+  
+  .offcanvas-body .btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Medium devices and up */
+@media (min-width: 768px) {
+  /* Improve table layout on tablets */
+  .table-section .table th,
+  .table-section .table td {
+    padding: 0.75rem;
+  }
+  
+  /* Better spacing for upload area */
+  .upload-area {
+    padding: 2rem;
+  }
+}
+
+/* Large devices and up */
+@media (min-width: 992px) {
+  /* Restore full desktop layout */
+  .table-section .table th,
+  .table-section .table td {
+    padding: 1rem;
+  }
+  
+  /* Better modal sizing on desktop */
+  .modal-dialog.modal-lg {
+    max-width: 800px;
+  }
+}
+
+/* Upload area styling */
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+
+.upload-area.dragover {
+    border-color: var(--dm-accent);
+    background-color: #f8f9ff;
+}
+
+/* Primary button color override */
+.btn-primary {
+    background-color: #3c2867;
+    border-color: #3c2867;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #33235f;
+    border-color: #33235f;
+}
+
+.btn-primary:focus-visible {
+    box-shadow: 0 0 0 .25rem rgba(60, 40, 103, .35);
+}
+
+.table thead th {
+    background-color: var(--dm-accent);
+    color: #fff;
+    vertical-align: middle;
+}
+
+/* Perfect centering for pricing modal */
+#pricingModal .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 3.5rem);
+  margin: 1.75rem auto;
+}
+
+#pricingModal .modal-content {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#pricingModal .modal-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+#pricingModal .modal-body {
+  padding: 1.5rem;
+}
+
+/* Pricing table responsive styles */
+.pricing-table {
+  font-size: 0.9rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.75rem 0.5rem;
+  vertical-align: middle;
+}
+
+.pricing-btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+/* Responsive modal adjustments */
+@media (max-width: 575.98px) {
+  #pricingModal .modal-dialog {
+    margin: 0.5rem;
+    min-height: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+  }
+  
+  #pricingModal .modal-content {
+    border-radius: 0.5rem;
+  }
+  
+  #pricingModal .modal-header,
+  #pricingModal .modal-body {
+    padding: 1rem;
+  }
+  
+  #pricingModal .modal-title {
+    font-size: 1.25rem;
+  }
+  
+  .pricing-table {
+    font-size: 0.8rem;
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .pricing-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #pricingModal .modal-dialog {
+    max-width: 500px;
+  }
+  
+  .pricing-table {
+    font-size: 0.85rem;
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.625rem 0.375rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #pricingModal .modal-dialog {
+    max-width: 600px;
+  }
+  
+  .pricing-table {
+    font-size: 0.9rem;
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #pricingModal .modal-dialog {
+    max-width: 700px;
+  }
+  
+  .pricing-table {
+    font-size: 1rem;
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    padding: 1rem 0.75rem;
+  }
+  
+  .pricing-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Mobile menu button styling */
+.mobile-menu-btn {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  color: #5b4a8f !important;
+}
+
+.mobile-menu-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #6c757d;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-btn .bi-list {
+  color: #5b4a8f;
+  transition: color 0.2s ease-in-out;
+}
+
+.mobile-menu-btn:hover .bi-list {
+  color: #5b4a8f;
+}
+
+/* Responsive adjustments for mobile menu button */
+@media (max-width: 575.98px) {
+  .mobile-menu-btn {
+    padding: 0.375rem 0.625rem;
+    border-width: 1.5px;
+  }
+  
+  .mobile-menu-btn .bi-list {
+    font-size: 1.1rem !important;
+  }
+}
+
+
