@@ -1,7 +1,7 @@
 /* Color scheme derived from screenshot to preserve look */
 :root {
-    --dm-deep: #33235f;
-    --dm-accent: #5b4a8f;
+    --dm-deep: #2c3941;
+    --dm-accent: #2c3941;
 }
 
 body {
@@ -55,44 +55,44 @@ body {
 
 /* Primary button styles */
 .btn-primary {
-    background-color: #3c2867;
-    border-color: #3c2867;
+    background-color: #2c3941;
+    border-color: #2c3941;
     color: #fff;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #33235f;
-    border-color: #33235f;
+    background-color: #1e2a31;
+    border-color: #1e2a31;
     color: #fff;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(60, 40, 103, 0.2);
+    box-shadow: 0 2px 8px rgba(44, 57, 65, 0.2);
 }
 
 .btn-primary:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(60, 40, 103, 0.35);
+    box-shadow: 0 0 0 0.25rem rgba(44, 57, 65, 0.35);
 }
 
 /* Outline primary button styles */
 .btn-outline-primary {
     background-color: transparent;
-    border-color: #3c2867;
-    color: #3c2867;
+    border-color: #2c3941;
+    color: #2c3941;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 .btn-outline-primary:active {
-    background-color: #3c2867;
-    border-color: #3c2867;
+    background-color: #2c3941;
+    border-color: #2c3941;
     color: #fff;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(60, 40, 103, 0.2);
+    box-shadow: 0 2px 8px rgba(44, 57, 65, 0.2);
 }
 
 .btn-outline-primary:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(60, 40, 103, 0.35);
+    box-shadow: 0 0 0 0.25rem rgba(44, 57, 65, 0.35);
 }
 
 /* Secondary button styles */
@@ -583,7 +583,7 @@ body {
 }
 
 .pdf-content blockquote {
-  border-left: 4px solid #3c2867;
+  border-left: 4px solid #2c3941;
   padding-left: 1rem;
   margin: 1rem 0;
   font-style: italic;
@@ -706,11 +706,11 @@ body {
 }
 
 .social-icon:hover {
-  background-color: #3c2867;
+  background-color: #2c3941;
   color: #fff;
-  border-color: #3c2867;
+  border-color: #2c3941;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(60, 40, 103, 0.2);
+  box-shadow: 0 4px 12px rgba(44, 57, 65, 0.2);
 }
 
 .social-icon i {
