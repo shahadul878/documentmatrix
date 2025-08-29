@@ -34,21 +34,134 @@ body {
     padding: 0;
 }
 
-/* Keep header buttons style close to screenshot */
-#btn-generate {
-    border-radius: .5rem;
-    border: 1px solid #187b9d;
-    color: #187798;
-    border-radius: 4px;
+/* Standardized button styles */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
 }
 
-#btn-generate:hover {
-    background-color: #187b9d;
-    color: white;
+.btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
 }
 
-#btn-login {
-    border-radius: 4px;
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+}
+
+/* Primary button styles */
+.btn-primary {
+    background-color: #3c2867;
+    border-color: #3c2867;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #33235f;
+    border-color: #33235f;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(60, 40, 103, 0.2);
+}
+
+.btn-primary:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(60, 40, 103, 0.35);
+}
+
+/* Outline primary button styles */
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: #3c2867;
+    color: #3c2867;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #3c2867;
+    border-color: #3c2867;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(60, 40, 103, 0.2);
+}
+
+.btn-outline-primary:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(60, 40, 103, 0.35);
+}
+
+/* Secondary button styles */
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #5a6268;
+    border-color: #5a6268;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.2);
+}
+
+.btn-secondary:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.35);
+}
+
+/* Outline secondary button styles */
+.btn-outline-secondary {
+    background-color: transparent;
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.2);
+}
+
+.btn-outline-secondary:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.35);
+}
+
+/* Dark outline button styles */
+.btn-outline-dark {
+    background-color: transparent;
+    border-color: #343a40;
+    color: #343a40;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 58, 64, 0.2);
+}
+
+.btn-outline-dark:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.35);
+}
+
+/* Button active state */
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Card subtle border similar to table container look */
@@ -202,22 +315,7 @@ body {
     background-color: #f8f9ff;
 }
 
-/* Primary button color override */
-.btn-primary {
-    background-color: #3c2867;
-    border-color: #3c2867;
-}
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-    background-color: #33235f;
-    border-color: #33235f;
-}
-
-.btn-primary:focus-visible {
-    box-shadow: 0 0 0 .25rem rgba(60, 40, 103, .35);
-}
 
 .table thead th {
     background-color: var(--dm-accent);
@@ -360,31 +458,24 @@ body {
 
 /* Mobile menu button styling */
 .mobile-menu-btn {
-  border-radius: 0.5rem;
-  border: none;
-  padding: 0.5rem 0.75rem;
-  transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   color: #5b4a8f !important;
+  border: 1px solid #dee2e6;
 }
 
 .mobile-menu-btn:hover {
   background-color: #f8f9fa;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: #5b4a8f;
+  color: #5b4a8f !important;
 }
 
 .mobile-menu-btn:focus,
 .mobile-menu-btn:focus-visible {
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: none;
-  outline: none;
-}
-
-.mobile-menu-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-color: #5b4a8f;
+  color: #5b4a8f !important;
+  box-shadow: 0 0 0 0.25rem rgba(91, 74, 143, 0.25);
 }
 
 .mobile-menu-btn .bi-list {
@@ -400,7 +491,6 @@ body {
 @media (max-width: 575.98px) {
   .mobile-menu-btn {
     padding: 0.375rem 0.625rem;
-    border: none;
   }
   
   .mobile-menu-btn .bi-list {
@@ -518,19 +608,9 @@ body {
   font-weight: 600;
 }
 
-/* Content button hover effect */
+/* Content button specific styles */
 .table-content-btn {
-  transition: all 0.2s ease-in-out;
   position: relative;
-}
-
-.table-content-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(60, 40, 103, 0.2);
-}
-
-.table-content-btn:active {
-  transform: translateY(0);
 }
 
 /* Responsive adjustments for PDF modal */
@@ -593,4 +673,90 @@ body {
   }
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  margin-top: auto;
+}
 
+.footer p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #dee2e6;
+}
+
+.social-icon:hover {
+  background-color: #3c2867;
+  color: #fff;
+  border-color: #3c2867;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(60, 40, 103, 0.2);
+}
+
+.social-icon i {
+  font-size: 1.1rem;
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 767.98px) {
+  .footer .row {
+    text-align: center;
+  }
+  
+  .footer .col-md-6:first-child {
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .social-icon i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 1rem 0;
+  }
+  
+  .footer p {
+    font-size: 0.8rem;
+  }
+  
+  .social-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0 0.25rem;
+  }
+  
+  .social-icon i {
+    font-size: 0.9rem;
+  }
+}
