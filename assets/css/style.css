@@ -182,7 +182,7 @@ body {
   
   /* Mobile header adjustments */
   .logo {
-    max-height: 40px;
+   width: 150px;
   }
   
   /* Stack header buttons on mobile */
@@ -230,7 +230,7 @@ body {
 @media (max-width: 575.98px) {
   /* Header adjustments for very small screens */
   header .container {
-    padding: 0.75rem 1rem;
+    padding: 0;
   }
   
   /* Reduce button sizes on mobile */
