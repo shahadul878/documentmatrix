@@ -223,7 +223,10 @@ body {
     background-color: var(--dm-accent);
     color: #fff;
     vertical-align: middle;
-    min-width: 250px;
+}
+
+.table-section .table thead th{
+  min-width: 250px;
 }
 
 /* Perfect centering for pricing modal */
