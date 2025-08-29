@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-    max-height: 56px;
+    width: 180px;
 }
 
 .min-vh-25 {
