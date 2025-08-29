@@ -229,6 +229,10 @@ body {
   min-width: 250px;
 }
 
+.pricing-table thead th{
+  min-width: 58px;
+}
+
 /* Perfect centering for pricing modal */
 #pricingModal .modal-dialog {
   display: flex;
