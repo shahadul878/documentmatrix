@@ -333,6 +333,12 @@ body {
   min-width: 58px;
 }
 
+.pricing-table thead th{
+    text-align: center;
+    background-color: var(--dm-accent);
+    color: #fff;
+}
+
 /* Perfect centering for pricing modal */
 #pricingModal .modal-dialog {
   display: flex;
