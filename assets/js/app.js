@@ -235,8 +235,8 @@
     const contentButtons = document.querySelectorAll('.table-content-btn');
     
     contentButtons.forEach(button => {
-      // Get the filename from the table row
-      const fileName = button.closest('tr').querySelector('td:first-child').textContent;
+      // Get the filename from the table row and trim whitespace
+      const fileName = button.closest('tr').querySelector('.document-name').textContent.trim();
       
       // Click event
       button.addEventListener('click', (e) => {

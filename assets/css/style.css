@@ -13,13 +13,15 @@ body {
 }
 
 .logo {
-    width: 180px;
+    width: 80px;
 }
 
 .min-vh-25 {
     min-height: 25vh;
 }
-
+.w-max-900 {
+    max-width: 90%;
+}
 .floating-toolbar {
     position: fixed;
     right: 16px;
@@ -182,7 +184,7 @@ body {
   
   /* Mobile header adjustments */
   .logo {
-   width: 150px;
+   width: 60px;
   }
   
   /* Stack header buttons on mobile */
@@ -294,7 +296,7 @@ body {
   /* Restore full desktop layout */
   .table-section .table th,
   .table-section .table td {
-    padding: 1rem;
+    padding: 10px;
   }
   
   /* Better modal sizing on desktop */
@@ -318,8 +320,8 @@ body {
 
 
 .table thead th {
-    background-color: var(--dm-accent);
-    color: #fff;
+    color: var(--dm-accent);
+    background-color: #fff;
     vertical-align: middle;
 }
 
@@ -610,7 +612,30 @@ body {
 
 /* Content button specific styles */
 .table-content-btn {
-  position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: var(--dm-deep);
+    border-color: var(--dm-deep);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.table-content-btn:hover {
+    background-color: #1e2a31;
+    border-color: #1e2a31;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(44, 57, 65, 0.2);
+}
+
+.table-content-btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(44, 57, 65, 0.25);
 }
 
 /* Responsive adjustments for PDF modal */
@@ -684,6 +709,14 @@ body {
   font-size: 0.9rem;
   color: #6c757d;
 }
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 
 .social-icons {
   display: flex;
@@ -759,4 +792,49 @@ body {
   .social-icon i {
     font-size: 0.9rem;
   }
+}
+
+/* Document name styling */
+.document-name {
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.9rem;
+    word-break: break-word;
+    max-width: 200px;
+}
+
+/* Table section styling */
+.table-section {
+    border: 1px solid #e9ecef;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.table-section .table {
+    margin-bottom: 0;
+}
+
+.table-section .table thead th {
+    color: var(--dm-deep);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.table-section .table tbody td {
+    padding: 8px;
+    border: none;
+    vertical-align: middle;
+}
+
+.table-section .table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-section .table tbody tr:hover {
+    background-color: #f8f9fa;
 }
