@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-    width: 80px;
+    width: 56px;
 }
 
 .min-vh-25 {
@@ -812,7 +812,7 @@ body {
 /* Table section styling */
 .table-section {
     border: 1px solid #e9ecef;
-    border-radius: 0.75rem;
+    border-radius: 0;
     overflow: hidden;
     background-color: #fff;
 }
