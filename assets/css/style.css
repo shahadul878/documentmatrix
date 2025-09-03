@@ -733,8 +733,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: #fff;
   color: #6c757d;
@@ -752,7 +752,7 @@ body {
 }
 
 .social-icon i {
-  font-size: 1.1rem;
+  font-size: 12px;
 }
 
 /* Responsive footer adjustments */
