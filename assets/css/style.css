@@ -843,3 +843,26 @@ body {
 .table-section .table tbody tr:hover {
     background-color: #f8f9fa;
 }
+
+/* Footer positioning for large devices */
+@media (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    main {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        width: auto;
+    }
+}
